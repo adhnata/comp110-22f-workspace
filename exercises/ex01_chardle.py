@@ -6,21 +6,21 @@ num_match: int = 0
 word_choice: str = str(input("Enter a 5-character word: "))
 
 
-if len(word_choice) > 5:
+if int(len(word_choice)) > 5:
     print("Error: Word must contain 5 characters")
     exit()
 
-if len(word_choice) < 5:
+if int(len(word_choice)) < 5:
     print("Error: Word must contain 5 characters")
     exit()
 
 char_choice: str = str(input("Enter a single character: "))
 
-if len(char_choice) > 1:
+if int(len(char_choice)) > 1:
     print("Error: Character must be a single character.")
     exit()
 
-if len(char_choice) > 1:
+if int(len(char_choice)) < 1:
     print("Error: Character must be a single character.")
     exit()
 
@@ -50,16 +50,16 @@ if num_match ==  0:
     print("No instances of " + char_choice + " found in " + word_choice)
 
 if num_match == 1:
-    print(num_match + " instance of " + char_choice + " found in " + word_choice)
+    print(str(num_match) + " instance of " + char_choice + " found in " + word_choice)
 
 if num_match == 2:
-    print(num_match + " instances of " + char_choice + " found in " + word_choice)
+    print(str(num_match) + " instances of " + char_choice + " found in " + word_choice)
 
 if num_match == 3:
-    print(num_match + " instances of " + char_choice + " found in " + word_choice)
+    print(str(num_match) + " instances of " + char_choice + " found in " + word_choice)
 
 if num_match == 4:
-    print(num_match + " instances of " + char_choice + " found in " + word_choice)
+    print(str(num_match) + " instances of " + char_choice + " found in " + word_choice)
 
 if num_match == 5:
-    print(num_match + " instances of " + char_choice + " found in " + word_choice)
+    print(str(num_match) + " instances of " + char_choice + " found in " + word_choice)
