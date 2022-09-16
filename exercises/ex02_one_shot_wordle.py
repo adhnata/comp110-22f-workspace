@@ -16,14 +16,15 @@ GREEN_BOX: str = "\U0001F7E9"
 YELLOW_BOX: str = "\U0001F7E8"
 emoji: str = ""
 
-in_the_word: bool = False
-check: int = 0
+
 i: int = 0
 while i < 6:
     if secret[i] == word_guess[i]:
         emoji = emoji + GREEN_BOX
         i = i + 1
     else:
+        in_the_word: bool = False
+        check: int = 0
         while in_the_word == False and check < 6:
             
             if word_guess[i] == secret[check]:

@@ -14,3 +14,4 @@ z: int = my_max(x, y)
 print(z)
 
 print("\U0001F6A2")
+
