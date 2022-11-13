@@ -2,7 +2,7 @@
 
 __author__ = "730616599"
  
-import random
+from random import randint
 
 points: int = 0
 player: str = ""
@@ -44,11 +44,11 @@ def create_secret() -> int:
     if answer == "Y":
         smallest = input("Give me the smallest integer you'd use for the secret: ")
         biggest = input("Give me the biggest integer you'd use: ")
-        secret = random.randint(smallest, biggest)
+        secret = randint(smallest, biggest)
         points += 1
     
     if answer == "N":
-        secret = random.randint(1, 10)
+        secret = randint(1, 10)
     
     return secret
 
